@@ -24,8 +24,9 @@ const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
 type ReceiptStatus int32
 
 const (
-	ReceiptStatus_FailureReceiptStatus        ReceiptStatus = 0
-	ReceiptStatus_SuccessReceiptStatus        ReceiptStatus = 1
+	ReceiptStatus_FailureReceiptStatus ReceiptStatus = 0
+	ReceiptStatus_SuccessReceiptStatus ReceiptStatus = 1
+	//1xx for ErrorCode
 	ReceiptStatus_ErrUnknown                  ReceiptStatus = 100
 	ReceiptStatus_ErrOutOfGas                 ReceiptStatus = 101
 	ReceiptStatus_ErrCodeStoreOutOfGas        ReceiptStatus = 102
